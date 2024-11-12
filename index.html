@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hand Gesture Drawing App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Hand Gesture Drawing App</h1>
+    <div class="controls">
+        <button id="reset-button">Restart</button>
+    </div>
+    <video id="video" autoplay></video>
+    <canvas id="canvas"></canvas>
+    <p>Use your index finger to draw or erase. Select color or erase by positioning your finger over the squares. Draw or erase by bringing your index and middle fingers close together.</p>
+
+    <!-- Notification Div -->
+    <div id="notification" class="hidden"></div>
+
+    <!-- Include MediaPipe or TensorFlow.js Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
